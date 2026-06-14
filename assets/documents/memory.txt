@@ -1,0 +1,91 @@
+Revised implementation plan
+1. Create one master resume profile from all three PDFs
+Merge all unique information from the three resumes into one master content file. This should not simply concatenate the resumes. It should deduplicate repeated roles, skills, summaries, links, education, and achievements.
+
+Suggested task
+Create a merged master resume profile from all three PDFs
+View task
+2. Use the master resume as the website content source
+The site should not be written directly from the raw PDFs. The grand/master resume should drive all website sections.
+
+Suggested task
+Use the master resume profile as the website source of truth
+View task
+3. Build a stronger professional homepage
+The homepage should become a premium personal-brand landing page for consulting, advisory, mentoring, and opportunity generation.
+
+Suggested task
+Build the homepage from the merged master resume
+View task
+4. Create a web resume page from the grand version
+The site should include a polished web resume, not only a PDF download.
+
+Suggested task
+Create a web resume page from the master resume
+View task
+5. Create a paid services page using resume-backed credibility
+Services should be tied to your actual experience, not generic consulting labels.
+
+Suggested task
+Create a services page backed by resume credibility
+View task
+6. Normalize public document handling
+The original filenames are fine for internal reference, but the public resume link should use a clean filename.
+
+Suggested task
+Create a clean public resume PDF link
+View task
+7. Update navigation for the new site structure
+The current navigation should be replaced with professional links.
+
+Suggested task
+Update navigation for professional site structure
+
+Start task
+8. Use the master resume to improve blog positioning
+The blog should support your authority and lead visitors toward services.
+
+Suggested task
+Align blog topics with the merged professional profile
+
+Start task
+Recommended content pipeline
+Original PDFs
+   ↓
+Extract text
+   ↓
+Merge + deduplicate
+   ↓
+assets/documents/govindarajan-vishnuchithan-master-resume.md
+   ↓
+Website pages
+   ├── index.html
+   ├── resume.html
+   ├── services.html
+   └── blog/index.html
+   ↓
+Public resume PDF
+assets/documents/govindarajan-vishnuchithan-resume-2026.pdf
+Recommended final structure
+/
+├── index.html
+├── services.html
+├── resume.html
+├── blog/
+│   └── index.html
+├── assets/
+│   └── documents/
+│       ├── govindarajan-vishnuchithan-master-resume.md
+│       ├── govindarajan-vishnuchithan-resume-2026.pdf
+│       ├── Govind_Resume_2026_v3 (1).pdf
+│       ├── Govind_India_Resume.pdf
+│       ├── Govind_Resume_CL_2026v1.pdf
+│       └── README.md
+└── images/
+Important note
+Because this is currently a read-only QA/planning pass, I am not modifying files yet. The next implementation step should be to extract the three PDFs, create the merged master resume, and then rebuild the site pages from that source.
+
+Testing
+⚠️ pwd; find .. -name AGENTS.md -print; printf '\nDocs:\n'; rg --files assets/documents || true; printf '\nHTML files:\n'; rg --files -g '*.html' | head -50 — Static inspection only; confirmed the three resume PDFs exist under assets/documents/.
+
+⚠️ sed -n '1,240p' index.html; printf '\n--- blog ---\n'; sed -n '1,160p' blog/index.html — Static inspection confirmed the current homepage and blog still contain template content that should be replaced.
