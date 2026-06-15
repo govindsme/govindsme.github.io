@@ -31,7 +31,7 @@
                 <nav id="nav">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="resume.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="blog/index.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -41,8 +41,8 @@
             <div class="wrapper style1">
                 <section class="container special contact-form">
                     <header>
-                        <h2>Request the PDF resume</h2>
-                        <p>Submit your request here and a secure copy of the resume will be shared shortly.</p>
+                        <h2>Start a conversation</h2>
+                        <p>Use this form to request the resume, inquire about services, or start a conversation. Messages are reviewed manually and handled securely.</p>
                     </header>
                     <form id="contactForm">
                         <label for="name">Name</label>
@@ -51,11 +51,18 @@
                         <label for="email">Email address</label>
                         <input type="email" id="email" name="email" placeholder="you@example.com" required />
 
+                        <label for="purpose">Purpose</label>
+                        <select id="purpose" name="purpose">
+                            <option value="general">General inquiry</option>
+                            <option value="services">Services inquiry</option>
+                            <option value="resume">Request resume (PDF)</option>
+                        </select>
+
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" placeholder="Let me know the best time to connect or what you need." required></textarea>
 
-                        <p class="form-note">All fields are required. Your request is reviewed manually and the resume PDF will be shared securely.</p>
-                        <button class="button" type="submit">Submit request</button>
+                        <p class="form-note">All fields are required. Use this form to request the resume PDF or to ask about advisory/services; messages are reviewed manually.</p>
+                        <button class="button" type="submit">Send message</button>
                         <div id="formMessage"></div>
                     </form>
                 </section>
@@ -66,6 +73,7 @@
                 event.preventDefault();
                 var name = document.getElementById('name').value.trim();
                 var email = document.getElementById('email').value.trim();
+                var purpose = document.getElementById('purpose').value;
                 var message = document.getElementById('message').value.trim();
                 var result = document.getElementById('formMessage');
                 var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -80,7 +88,8 @@
                     return;
                 }
 
-                result.innerHTML = '<div class="form-success"><strong>Request placed.</strong> Your resume PDF request has been recorded. A response will be shared shortly.</div>';
+                var purposeText = (purpose === 'resume') ? 'Your resume request has been recorded.' : 'Your message has been recorded.';
+                result.innerHTML = '<div class="form-success"><strong>Thank you.</strong> ' + purposeText + ' A response will be shared shortly.</div>';
                 this.reset();
             });
         </script>
