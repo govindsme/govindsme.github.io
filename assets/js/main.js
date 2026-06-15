@@ -215,3 +215,41 @@
 		});
 
 })(jQuery);
+
+// Load and display site semantic version from root /VERSION
+(function() {
+	// Strict semantic version pattern: major.minor.patch
+	var semverPattern = /^\d+\.\d+\.\d+$/;
+
+	function insertVersion(version) {
+		if (!version || !semverPattern.test(version)) return;
+		var $footer = document.getElementById('footer');
+		if (!$footer) return;
+		var el = document.createElement('div');
+		el.id = 'site-version';
+		el.style.textAlign = 'center';
+		el.style.fontSize = '0.9em';
+		el.style.color = '#666';
+		el.style.marginTop = '0.5em';
+		el.textContent = 'v' + version;
+		// Append to the footer container if present
+		var container = $footer.querySelector('.container') || $footer;
+		container.appendChild(el);
+	}
+
+	// Fetch VERSION file from site root
+	try {
+		fetch('/VERSION', {cache: 'no-store'}).then(function(resp) {
+			if (!resp.ok) return null;
+			return resp.text();
+		}).then(function(text) {
+			if (!text) return;
+			var version = text.trim();
+			insertVersion(version);
+		}).catch(function() {
+			// ignore failures
+		});
+	} catch (e) {
+		// ignore
+	}
+})();
