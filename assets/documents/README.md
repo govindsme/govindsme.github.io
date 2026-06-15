@@ -8,7 +8,7 @@ This directory keeps the canonical resume source, the public-facing PDF linked f
 
 ## Public resume PDF
 
-- `govindarajan-vishnuchithan-resume-2026.pdf` is the clean public-facing resume PDF path. The site links to this stable filename from the `resume.html` page.
+Public resume PDFs are no longer linked from the site. To request a secure copy of the resume PDF, use the website contact form. The master Markdown resume remains the source of truth for content updates.
 
 ## Original resume inputs
 
@@ -20,5 +20,6 @@ The following PDFs are original resume inputs/reference files and are intentiona
 
 ## Agent-friendly note
 
-- Use the master resume file as the source of truth for website content.
-- Use `memory.txt` for project-status updates and task tracking.
+-- Use the master resume file as the source of truth for website content.
+-- Use `memory.txt` for project-status updates and task tracking.
+-- Do not add public resume PDFs to the site; prefer the contact-request workflow for distributing PDFs.

@@ -1,7 +1,7 @@
 Current project status
 - Master resume source: assets/documents/govindarajan-vishnuchithan-master-resume.md
-- Public resume PDF: assets/documents/govindarajan-vishnuchithan-resume-2026.pdf
-- Website pages: index.html, resume.html, services.html, blog/index.html
+-- Public resume PDF: removed from site; use contact form to request a secure copy.
+-- Website pages: index.html, about.html, services.html, blog/index.html
 
 Completed work
 - Built the web resume page and advisory services page.

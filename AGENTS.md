@@ -7,16 +7,16 @@ Build and publish a professional personal website for Govindarajan Vishnuchithan
 - `assets/documents/govindarajan-vishnuchithan-master-resume.md`
 - `assets/documents/memory.txt`
 - `index.html`
-- `resume.html`
+- `about.html`
 - `services.html`
 - `blog/index.html`
 
 ## Page mapping
 - `/` → `index.html`
-- `/resume.html` → `resume.html`
+- `/about.html` → `about.html`
 - `/services.html` → `services.html`
 - `/blog/index.html` → `blog/index.html`
-- `/assets/documents/govindarajan-vishnuchithan-resume-2026.pdf` → public resume download
+> Public resume PDFs are no longer linked from the website. Use the contact form to request a secure copy.
 
 ## Publishing
 - Use GitHub Pages from the repository root.

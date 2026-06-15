@@ -151,7 +151,7 @@ Author of a BPB-published book on **Platform Engineering & Security** and an act
 
 ## 10. Contact details suitable for public website use
 
-- Public email: <govindarajanv@gmail.com>
+-- Contact: Use the website contact form for inquiries and resume requests.
 - Location: Bengaluru, India
 - Professional profiles: LinkedIn and GitHub links listed above
 
