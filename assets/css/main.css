@@ -1814,6 +1814,10 @@ input, select, textarea {
 			.image.centered img {
 				margin: 0 auto;
 				width: auto;
+
+	/* Site version display: prefer static element; hide dynamic duplicate */
+	#site-version { display: none; }
+	#site-version-static { text-align: center; font-size: 0.9em; color: #666; margin-top: 0.5em; }
 			}
 
 /* List */

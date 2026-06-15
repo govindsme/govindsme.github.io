@@ -223,7 +223,7 @@
 
 	function insertVersion(version) {
 		if (!version || !semverPattern.test(version)) return;
-		if (document.getElementById('site-version')) return; // respect existing static version
+		if (document.getElementById('site-version') || document.getElementById('site-version-static')) return; // respect existing static version
 		var $footer = document.getElementById('footer');
 		if (!$footer) return;
 		var el = document.createElement('div');
