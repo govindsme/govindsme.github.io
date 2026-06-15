@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Contact | Govindarajan Vishnuchithan</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="Contact form for requesting the resume PDF or advisory inquiries." />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            .contact-form { max-width: 720px; margin: 0 auto; }
+            .contact-form label { display: block; margin: 0.65em 0 0.3em; font-weight: 600; }
+            .contact-form input, .contact-form textarea { width: 100%; padding: 0.95em; border: 1px solid #ccc; border-radius: 0.4em; }
+            .contact-form .button { margin-top: 1.2em; }
+            .form-note { color: #5b5b5b; margin: 0.5em 0 1.5em; }
+            .form-success, .form-error { padding: 1em; border-radius: 0.5em; margin-top: 1.25em; }
+            .form-success { background: #eaf8ea; border: 1px solid #8fcb8f; color: #1f5f20; }
+            .form-error { background: #f9e4e4; border: 1px solid #d29090; color: #7a2525; }
+        </style>
+    </head>
+    <body class="no-sidebar is-preload">
+        <div id="page-wrapper">
+            <div id="header">
+                <div class="inner">
+                    <header>
+                        <h1><a href="index.html" id="logo">Contact</a></h1>
+                        <hr />
+                        <p>Request the PDF resume or ask about platform, DevSecOps, cloud, and leadership advisory.</p>
+                    </header>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="wrapper style1">
+                <section class="container special contact-form">
+                    <header>
+                        <h2>Request the PDF resume</h2>
+                        <p>Submit your request here and a secure copy of the resume will be shared shortly.</p>
+                    </header>
+                    <form id="contactForm">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required />
+
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Let me know the best time to connect or what you need." required></textarea>
+
+                        <p class="form-note">All fields are required. Your request is reviewed manually and the resume PDF will be shared securely.</p>
+                        <button class="button" type="submit">Submit request</button>
+                        <div id="formMessage"></div>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                var name = document.getElementById('name').value.trim();
+                var email = document.getElementById('email').value.trim();
+                var message = document.getElementById('message').value.trim();
+                var result = document.getElementById('formMessage');
+                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                if (!name || !email || !message) {
+                    result.innerHTML = '<div class="form-error">Please complete all fields before submitting.</div>';
+                    return;
+                }
+
+                if (!emailPattern.test(email)) {
+                    result.innerHTML = '<div class="form-error">Please enter a valid email address.</div>';
+                    return;
+                }
+
+                result.innerHTML = '<div class="form-success"><strong>Request placed.</strong> Your resume PDF request has been recorded. A response will be shared shortly.</div>';
+                this.reset();
+            });
+        </script>
+    </body>
+</html>
