@@ -1,0 +1,19 @@
+Current project status
+- Master resume source: assets/documents/govindarajan-vishnuchithan-master-resume.md
+- Public resume PDF: assets/documents/govindarajan-vishnuchithan-resume-2026.pdf
+- Website pages: index.html, resume.html, services.html, blog/index.html
+
+Completed work
+- Built the web resume page and advisory services page.
+- Prepared the blog landing page.
+- Identified the canonical master resume source.
+
+Pending work
+- Refresh the homepage content from the master resume.
+- Keep site navigation consistent across all pages.
+- Confirm GitHub Pages publication from the repository root.
+
+Next steps
+1. Use `assets/documents/govindarajan-vishnuchithan-master-resume.md` as the source of truth.
+2. Update public-facing page copy to match the resume.
+3. Publish using GitHub Pages.
