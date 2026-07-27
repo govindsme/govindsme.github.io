@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-    Helios by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
     <head>
         <title>Govindarajan Vishnuchithan | Platform Engineering, DevSecOps, Cloud</title>
@@ -18,6 +13,7 @@
         <link rel="canonical" href="https://govindsme.github.io/" />
         <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>GV</text></svg>" />
         <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/custom.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     </head>
     <body class="homepage is-preload">
@@ -25,32 +21,27 @@
 
             <!-- Header -->
                 <div id="header">
-
-                    <!-- Inner -->
-                        <div class="inner">
-                            <header>
-                                <img src="/images/resume-img-000.png" alt="Govindarajan Vishnuchithan headshot" class="avatar" />
-                                <h1><a href="index.html" id="logo">Govindarajan Vishnuchithan (Govind)</a></h1>
-                                <hr />
-                                <p>Global VP of Platform Engineering &amp; CISO | Cloud-native DevOps, AI/LLM, platform engineering, and security leader</p>
-                            </header>
-                            <footer>
-                                <a href="about.html" class="button circled scrolly">About</a>
-                            </footer>
-                        </div>
-
-                    <!-- Nav -->
-                        <nav id="nav">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="blog/index.html">Blog</a></li>
-                                <li><a href="resume.html">Resume</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-
+                    <div class="inner">
+                        <header>
+                            <img src="/images/resume-img-000.png" alt="Govindarajan Vishnuchithan headshot" class="avatar" />
+                            <h1><a href="index.html" id="logo">Govindarajan Vishnuchithan</a></h1>
+                            <hr />
+                            <p>Global VP of Platform Engineering &amp; CISO<br />Platform Engineering &bull; DevSecOps &bull; Cloud-Native &bull; AI/LLM &bull; Security</p>
+                        </header>
+                        <footer>
+                            <a href="about.html" class="button circled scrolly">About Me</a>
+                        </footer>
+                    </div>
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="blog/index.html">Blog</a></li>
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
 
             <!-- Banner -->
@@ -70,20 +61,29 @@
                 <div class="wrapper style2">
                     <div class="container">
                         <section>
-                            <header>
+                            <header class="fade-in">
                                 <h2>What I do</h2>
+                                <p>Helping engineering organizations modernize secure delivery, platform adoption, observability, and automation by connecting strategy to operational execution.</p>
                             </header>
-                            <p>Help engineering organizations modernize secure delivery, platform adoption, observability, and automation by connecting strategy to operational execution.</p>
-                            <div class="row">
-                                <article class="col-4 col-12-mobile special">
+                            <div class="row stagger">
+                                <article class="col-4 col-12-mobile special feature-card fade-in">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-cubes"></i>
+                                    </div>
                                     <h3>Platform Engineering</h3>
                                     <p>Define platform operating models, golden paths, self-service workflows, and adoption strategies for engineering teams.</p>
                                 </article>
-                                <article class="col-4 col-12-mobile special">
+                                <article class="col-4 col-12-mobile special feature-card fade-in">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
                                     <h3>DevSecOps &amp; Automation</h3>
                                     <p>Build secure pipelines, infrastructure automation, threat modeling as code, and reliable delivery systems.</p>
                                 </article>
-                                <article class="col-4 col-12-mobile special">
+                                <article class="col-4 col-12-mobile special feature-card fade-in">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-cloud"></i>
+                                    </div>
                                     <h3>Cloud &amp; Kubernetes</h3>
                                     <p>Design cloud-native architectures and Kubernetes-native platforms that improve resilience, security, and cost efficiency.</p>
                                 </article>
@@ -92,23 +92,57 @@
                     </div>
                 </div>
 
+            <!-- Metrics -->
+                <div class="metrics-section">
+                    <div class="container">
+                        <h2 class="fade-in">Proven outcomes at scale</h2>
+                        <div class="metric-grid stagger">
+                            <div class="metric-item fade-in">
+                                <div class="metric-number" data-target="20">0</div>
+                                <div class="metric-label">Years of engineering experience</div>
+                            </div>
+                            <div class="metric-item fade-in">
+                                <div class="metric-number" data-target="1.5" data-prefix="$" data-suffix="M+">$0</div>
+                                <div class="metric-label">FinOps savings delivered</div>
+                            </div>
+                            <div class="metric-item fade-in">
+                                <div class="metric-number" data-target="5">0</div>
+                                <div class="metric-label">Industry certifications</div>
+                            </div>
+                            <div class="metric-item fade-in">
+                                <div class="metric-number" data-target="8">0</div>
+                                <div class="metric-label">Enterprise organizations served</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             <!-- Features -->
                 <div class="wrapper style1">
                     <section id="features" class="container special">
-                        <header>
+                        <header class="fade-in">
                             <h2>Leadership, credibility, and outcomes</h2>
                             <p>From platform engineering strategy to security, automation, and AI adoption, the work is anchored in measurable outcomes and enterprise transformation.</p>
                         </header>
-                        <div class="row">
-                            <article class="col-4 col-12-mobile special">
+                        <div class="row stagger">
+                            <article class="col-4 col-12-mobile special feature-card fade-in">
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
                                 <h3>20+ years of experience</h3>
                                 <p>Built global platform teams, centralized delivery systems, and secure engineering practices across complex environments.</p>
                             </article>
-                            <article class="col-4 col-12-mobile special">
+                            <article class="col-4 col-12-mobile special feature-card fade-in">
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
                                 <h3>Proven outcomes</h3>
                                 <p>Delivered measurable savings, reduced operational risk, and improved engineering velocity through practical automation and governance.</p>
                             </article>
-                            <article class="col-4 col-12-mobile special">
+                            <article class="col-4 col-12-mobile special feature-card fade-in">
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
                                 <h3>Thought leadership</h3>
                                 <p>Author of a BPB book on platform engineering and security, with a strong profile in cloud, DevOps, and engineering leadership.</p>
                             </article>
@@ -120,24 +154,64 @@
                 <div class="wrapper style2">
                     <div class="container">
                         <section>
-                            <header>
+                            <header class="fade-in">
                                 <h2>Certified and recognized</h2>
+                                <p>Backed by industry certifications, published work, and recognized expertise across platform engineering, security, and cloud.</p>
                             </header>
-                            <div class="row">
-                                <article class="col-4 col-12-mobile special">
-                                    <h3>Industry certifications</h3>
-                                    <p>Certified DevSecOps Professional, Certified Kubernetes Administrator, Certified Kubernetes Security Specialist, Azure AI Engineer Associate, and NVIDIA Generative AI &amp; LLM Associate.</p>
-                                </article>
-                                <article class="col-4 col-12-mobile special">
-                                    <h3>Published author</h3>
-                                    <p>Author of <em>Platform Engineering and Security</em> published by BPB, covering platform strategy, secure delivery, and practical governance patterns.</p>
-                                </article>
-                                <article class="col-4 col-12-mobile special">
-                                    <h3>Award winning</h3>
-                                    <p>Best Security Implementation Award at the 17th Edition Datacenter Summit (2023), plus multiple GEM awards for engineering leadership.</p>
-                                </article>
+                            <div class="cert-grid stagger">
+                                <div class="cert-badge fade-in">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Certified DevSecOps Professional</span>
+                                </div>
+                                <div class="cert-badge fade-in">
+                                    <i class="fas fa-dharmachakra"></i>
+                                    <span>Certified Kubernetes Administrator</span>
+                                </div>
+                                <div class="cert-badge fade-in">
+                                    <i class="fas fa-lock"></i>
+                                    <span>Certified Kubernetes Security Specialist</span>
+                                </div>
+                                <div class="cert-badge fade-in">
+                                    <i class="fab fa-microsoft"></i>
+                                    <span>Azure AI Engineer Associate</span>
+                                </div>
+                                <div class="cert-badge fade-in">
+                                    <i class="fas fa-microchip"></i>
+                                    <span>NVIDIA Generative AI &amp; LLM Associate</span>
+                                </div>
+                            </div>
+                            <div style="text-align: center; margin-top: 2em;" class="fade-in">
+                                <a href="resume.html" class="button" style="margin-top: 1em;">View Full Resume</a>
                             </div>
                         </section>
+                    </div>
+                </div>
+
+            <!-- Quote -->
+                <div class="quote-section">
+                    <div class="container fade-in">
+                        <div class="quote-block">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <blockquote>
+                                Practical templates and checklists accelerate platform adoption and reduce organizational friction. Platform engineering delivers measurable developer velocity, operational resilience, and security maturity.
+                            </blockquote>
+                            <cite>&mdash; From <em>Platform Engineering and Security</em>, BPB</cite>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Logo Strip -->
+                <div class="logo-strip">
+                    <div class="container">
+                        <h3 class="fade-in">Trusted by leading organizations</h3>
+                        <div class="logo-grid stagger">
+                            <span class="logo-item fade-in">RamSoft</span>
+                            <span class="logo-item fade-in">Standard Chartered</span>
+                            <span class="logo-item fade-in">HP Inc.</span>
+                            <span class="logo-item fade-in">SAP Labs</span>
+                            <span class="logo-item fade-in">Play Games24x7</span>
+                            <span class="logo-item fade-in">GitHub</span>
+                        </div>
                     </div>
                 </div>
 
@@ -146,7 +220,7 @@
                     <div class="container">
                         <section class="contact" id="contact">
                             <header>
-                                <h3>Contact</h3>
+                                <h3>Let's connect</h3>
                             </header>
                             <p>Reach out for advisory on platform engineering, DevSecOps, cloud-native architecture, AI adoption, or leadership mentoring.</p>
                             <ul class="icons">
@@ -167,5 +241,42 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+        (function(){
+            // Scroll animations
+            var observer = new IntersectionObserver(function(entries){
+                entries.forEach(function(e){
+                    if(e.isIntersecting){ e.target.classList.add('visible'); }
+                });
+            },{threshold:0.1, rootMargin:'0px 0px -40px 0px'});
+            document.querySelectorAll('.fade-in,.fade-in-left,.fade-in-right,.scale-in').forEach(function(el){ observer.observe(el); });
+
+            // Counter animation
+            var counters = document.querySelectorAll('.metric-number[data-target]');
+            var counterObserver = new IntersectionObserver(function(entries){
+                entries.forEach(function(e){
+                    if(e.isIntersecting && !e.target.dataset.animated){
+                        e.target.dataset.animated = 'true';
+                        var el = e.target;
+                        var target = parseFloat(el.dataset.target);
+                        var prefix = el.dataset.prefix || '';
+                        var suffix = el.dataset.suffix || '';
+                        var duration = 1500;
+                        var start = performance.now();
+                        var isFloat = target % 1 !== 0;
+                        function tick(now){
+                            var p = Math.min((now - start) / duration, 1);
+                            var ease = 1 - Math.pow(1 - p, 3);
+                            var val = ease * target;
+                            el.textContent = prefix + (isFloat ? val.toFixed(1) : Math.floor(val)) + suffix;
+                            if(p < 1) requestAnimationFrame(tick);
+                        }
+                        requestAnimationFrame(tick);
+                    }
+                });
+            },{threshold:0.5});
+            counters.forEach(function(c){ counterObserver.observe(c); });
+        })();
+        </script>
     </body>
 </html>

@@ -13,6 +13,7 @@
         <link rel="canonical" href="https://govindsme.github.io/contact.html" />
         <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>GV</text></svg>" />
         <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/custom.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     </head>
     <body class="no-sidebar is-preload">
@@ -36,34 +37,64 @@
                     </ul>
                 </nav>
             </div>
+
+            <section id="banner">
+                <header>
+                    <h2>Let's start a conversation</h2>
+                    <p>Use this form to request the resume, inquire about services, or start a conversation. Messages are reviewed manually and handled securely.</p>
+                </header>
+            </section>
+
             <div class="wrapper style1">
-                <section class="container special contact-form">
-                    <header>
-                        <h2>Start a conversation</h2>
-                        <p>Use this form to request the resume, inquire about services, or start a conversation. Messages are reviewed manually and handled securely.</p>
-                    </header>
-                    <form id="contactForm" action="https://formspree.io/f/xpzvoqyn" method="POST">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name" required />
+                <section class="container special contact-form fade-in">
+                    <div class="row">
+                        <div class="col-6 col-12-mobile">
+                            <h3 style="margin-bottom: 1em;"><i class="fas fa-envelope" style="color: var(--blue); margin-right: 0.4em;"></i> Send a message</h3>
+                            <form id="contactForm" action="https://formspree.io/f/xpzvoqyn" method="POST">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required />
 
-                        <label for="email">Email address</label>
-                        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                                <label for="email">Email address</label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com" required />
 
-                        <label for="purpose">Purpose</label>
-                        <select id="purpose" name="purpose">
-                            <option value="general">General inquiry</option>
-                            <option value="services">Services inquiry</option>
-                            <option value="resume">Request resume (PDF)</option>
-                        </select>
+                                <label for="purpose">Purpose</label>
+                                <select id="purpose" name="purpose">
+                                    <option value="general">General inquiry</option>
+                                    <option value="services">Services inquiry</option>
+                                    <option value="resume">Request resume (PDF)</option>
+                                </select>
 
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Let me know the best time to connect or what you need." required></textarea>
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Let me know the best time to connect or what you need." required></textarea>
 
-                        <p class="form-note">All fields are required. Use this form to request the resume PDF or to ask about advisory/services; messages are reviewed manually.</p>
-                        <button class="button" type="submit">Send message</button>
-                        <div id="formMessage"></div>
-                    </form>
+                                <p class="form-note">All fields are required.</p>
+                                <button class="button" type="submit">Send message</button>
+                                <div id="formMessage"></div>
+                            </form>
+                        </div>
+                        <div class="col-6 col-12-mobile">
+                            <h3 style="margin-bottom: 1em;"><i class="fas fa-info-circle" style="color: var(--blue); margin-right: 0.4em;"></i> Other ways to connect</h3>
+                            <div style="background: var(--gray-50); border-radius: var(--radius); padding: 2em; border: 1px solid var(--gray-200);">
+                                <p><i class="fab fa-linkedin" style="color: var(--blue); margin-right: 0.5em;"></i> <strong>LinkedIn</strong><br /><a href="https://www.linkedin.com/in/govindarajan-vishnuchithan/" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
+                                <p style="margin-top: 1.2em;"><i class="fab fa-github" style="color: var(--blue); margin-right: 0.5em;"></i> <strong>GitHub</strong><br /><a href="https://github.com/govindarajanv" target="_blank" rel="noopener">View GitHub profile</a></p>
+                                <p style="margin-top: 1.2em;"><i class="fas fa-book" style="color: var(--blue); margin-right: 0.5em;"></i> <strong>Book</strong><br /><a href="https://in.bpbonline.com/products/platform-engineering-and-security" target="_blank" rel="noopener">Platform Engineering &amp; Security (BPB)</a></p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
+            </div>
+
+            <div id="footer">
+                <div class="container">
+                    <section class="contact">
+                        <header><h3>Follow along</h3></header>
+                        <p>Technical leadership, cloud-native strategy, and platform engineering insights.</p>
+                        <ul class="icons">
+                            <li><a href="https://www.linkedin.com/in/govindarajan-vishnuchithan/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="https://github.com/govindarajanv" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </section>
+                </div>
             </div>
         </div>
         <script>
@@ -97,6 +128,24 @@
                     submitBtn.disabled = false;
                 });
             });
+        </script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+        (function(){
+            var observer = new IntersectionObserver(function(entries){
+                entries.forEach(function(e){
+                    if(e.isIntersecting){ e.target.classList.add('visible'); }
+                });
+            },{threshold:0.1, rootMargin:'0px 0px -40px 0px'});
+            document.querySelectorAll('.fade-in,.fade-in-left,.fade-in-right,.scale-in').forEach(function(el){ observer.observe(el); });
+        })();
         </script>
     </body>
 </html>
