@@ -1,21 +1,31 @@
 # govindsme.github.io
 
-Professional website for Govindarajan Vishnuchithan built as a static GitHub Pages site.
+Professional website for Govindarajan Vishnuchithan — Global VP of Platform Engineering & CISO.
+Static site hosted on GitHub Pages with a zero-build vanilla architecture.
 
 ## Site structure
-- `index.html` — homepage and landing page
--- `about.html` — professional About page summarizing experience and services
+- `index.html` — homepage (hero, metrics, expertise, featured book, timeline, latest posts)
+- `about.html` — profile, career history, certifications, education, awards
 - `services.html` — advisory service offerings
-- `blog/index.html` — blog landing page
-- `assets/documents/govindarajan-vishnuchithan-master-resume.md` — canonical resume source
--- Public resume PDF references removed from site; use the contact form to request a secure copy.
+- `resume.html` — full web resume (print-friendly)
+- `contact.html` — contact form (Formspree) and channels
+- `blog/index.html` + 9 dated posts — engineering leadership insights
+- `404.html` — custom not-found page
+
+## Assets
+- `assets/css/site.css` — the entire design system (tokens, components, responsive, print)
+- `assets/js/site.js` — all interactions (no dependencies)
+- `assets/icons.svg` — SVG icon sprite (`#i-*` symbols)
+- `assets/fonts/` — self-hosted Inter + Fraunces variable fonts
+- `assets/documents/` — master resume (source of truth) and working memory
+- `images/` — headshot, branded blog covers, social card
 
 ## Publishing
 - The site is static and requires no build step.
-- Enable GitHub Pages to publish from the repository root.
-- If publishing from a branch, choose `main` or `revision` as the source.
+- GitHub Pages publishes from the repository root on `main`.
+- Local preview: `python3 -m http.server` from the repo root, then open `http://localhost:8000`.
 
 ## Agent-friendly guidance
 - Use `assets/documents/govindarajan-vishnuchithan-master-resume.md` as the source of truth for resume content.
 - Update `assets/documents/memory.txt` with progress and next steps.
--- Keep navigation consistent across pages. Public resume PDFs should not be linked directly; use the contact workflow.
+- Keep navigation consistent across pages. Public resume PDFs are never linked; use the contact workflow.

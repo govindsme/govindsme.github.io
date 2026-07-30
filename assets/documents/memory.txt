@@ -1,19 +1,60 @@
 Current project status
 - Master resume source: assets/documents/govindarajan-vishnuchithan-master-resume.md
--- Public resume PDF: removed from site; use contact form to request a secure copy.
--- Website pages: index.html, about.html, services.html, blog/index.html
+- Public resume PDF: removed from site; use contact form to request a secure copy.
+- Website pages: index.html, about.html, services.html, resume.html, contact.html, blog/index.html, 9 blog posts, 404.html
+- 2026-07-30: Full site redesign ("Quiet Authority") approved and implemented. Publication pending (see below).
 
-Completed work
-- Built the web resume page and advisory services page.
-- Prepared the blog landing page.
-- Identified the canonical master resume source.
+Redesign implementation — COMPLETED (2026-07-30)
+- P0 hygiene: deleted template demo pages (left-sidebar.html, right-sidebar.html, no-sidebar.html),
+  added lang="en" everywhere, fixed 404 branding, replaced broken resume print CSS with new print block.
+- P1 design system (all new, zero-build vanilla stack):
+  - assets/css/site.css — tokens (ink/navy/accent #2E5CE6/cyan/amber), self-hosted fonts, fluid type,
+    sticky glass nav, hero, metrics, cards, timeline, badges, book band, quote, trust strip, blog cards,
+    breadcrumbs, prose, pager, forms, footer, reveal animations, prefers-reduced-motion, print.
+  - assets/js/site.js — mobile nav, header scroll state, IntersectionObserver reveals, counters,
+    Formspree async submit. Reduced-motion aware. Replaces all jQuery + plugins.
+  - assets/fonts/inter-var.woff2 + fraunces-var.woff2 (latin variable subsets, ~116 KB total).
+  - assets/icons.svg — 38-symbol inline SVG sprite (feather-style + LinkedIn/GitHub brand icons).
+  - favicon.svg — GV monogram.
+  - images/og-card.png — branded 1200x630 social card (generated locally with PIL).
+  - images/covers/*.jpg — 9 branded 1200x630 blog covers replacing stock photos (PIL generated).
+- P2 page rebuilds: all 14 pages rebuilt on the new system with root-relative URLs (/assets/...).
+  - Homepage: hero (single) -> metrics band -> expertise cards -> featured book band -> career timeline ->
+    latest 3 posts -> quote -> trust strip (8 orgs, matches metric) -> CTA.
+  - Blog posts: breadcrumbs, tag chips, reading time, Article + BreadcrumbList JSON-LD, prev/next pager,
+    branded covers, takeaway boxes; original content preserved; broken template HTML fixed.
+  - Contact: accessible form (labels, autocomplete, aria-live result), info panel; form JS lives in site.js.
+- P3 polish: Person JSON-LD on homepage, Twitter cards + og-card.png on all pages, per-post og:image covers,
+  width/height + lazy loading on images, skip links, :focus-visible rings, no inline styles (utility classes),
+  Amazon link replaced with clean /dp/9365892406 URL, site version badge feature dropped.
+- Legacy deleted (staged via git rm): 3 demo pages, Helios main.css/custom.css/noscript.css/fontawesome-all.min.css,
+  all 8 jQuery-era JS files, pic01-15 stock photos, header.jpg, ghe* images, threatmodel.png,
+  LICENSE.txt + README.txt (Helios CCA attribution no longer needed — all template assets removed), VERSION.
+  Stray assets/css/images/arrow.svg removed (needs staging).
 
-Pending work
-- Refresh the homepage content from the master resume.
-- Keep site navigation consistent across all pages.
-- Confirm GitHub Pages publication from the repository root.
+Design tokens (for future edits)
+- Colors: ink #0B1220, navy #101E33, surface #FFF, paper #F7F8FA, text #2A3547, muted #5B6B82,
+  accent #2E5CE6 (hover #2450C8), accent-soft #E7EDFD, cyan #0AA5C2, amber #B45309, line #E3E8EF.
+- Type: Fraunces (display) + Inter (body), self-hosted; scale via --step--1..--step-4 clamp() tokens.
+- Spacing: --space-s/m/l; layout max 72rem; radius 16px; icons via /assets/icons.svg#i-<name>.
+- Utility classes: mt-1/2/3, mb-3, text-muted, items-start, hero-center, eyebrow-cyan, chip/chip-light.
 
-Next steps
-1. Use `assets/documents/govindarajan-vishnuchithan-master-resume.md` as the source of truth.
-2. Update public-facing page copy to match the resume.
-3. Publish using GitHub Pages.
+Pending work (in order)
+1. Update AGENTS.md — page mapping (add resume/contact/404), new asset structure, editing rules.
+2. Update README.md — new structure and zero-build architecture.
+3. Update sitemap.xml — refresh lastmod to publish date.
+4. QA pass — run `python3 -m http.server` and verify: all pages return 200, all internal links resolve,
+   icons.svg loads, fonts load, no-JS rendering acceptable, reduced-motion honored, print styles OK.
+5. Commit everything (including staged deletions + new files) and push to main to publish.
+6. Owner action (outside repo): rotate GitHub PAT stored in local .git/config remote URL;
+   switch to a credential helper. Token was never committed to the repo.
+
+Content rules (unchanged)
+- assets/documents/govindarajan-vishnuchithan-master-resume.md is the source of truth for resume content.
+- Keep navigation and contact details consistent across all pages.
+- Contact form: Formspree endpoint https://formspree.io/f/xpzvoqyn (async fetch submit with fallback message).
+- Do not link public resume PDFs; direct resume requests to the contact form.
+
+Tooling used for assets (kept outside repo)
+- /tmp/kilo/gen_covers.py — regenerates og-card.png + blog covers (PIL).
+- /tmp/kilo/gen_posts.py — blog post page generator (data-driven template, re-runnable).

@@ -1,90 +1,181 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Cloud Governance Roadmap</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, " />
-        <meta name="description" content="Cloud governance patterns for resilient delivery pipelines." />
-        <link rel="stylesheet" href="../assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
-    </head>
-    <body class="no-sidebar is-preload">
-        <div id="page-wrapper">
-            <div id="header">
-                <div class="inner">
-                    <header>
-                        <h1><a href="index.html" id="logo">Cloud Governance Roadmap</a></h1>
-                        <hr />
-                        <p>Establish governance patterns that protect delivery and preserve agility.</p>
-                    <header>
-                        <h2>Cloud governance patterns for resilient delivery</h2>
-                        <p class="byline">By Govindarajan Vishnuchithan — Cloud governance &amp; FinOps</p>
-                        <p><strong>Quick takeaway:</strong> implement policy templates and account boundaries to preserve autonomy while enforcing cost and security guardrails.</p>
-                        <p>Create governance patterns that keep teams agile while preserving control and operational reliability.</p>
-                        <figure>
-                            <img src="../images/pic04.jpg" alt="Cloud governance" style="max-width:100%;height:auto;" />
-                        </figure>
-                        <p>This article shows how policy templates, cost guardrails, and account-level boundaries can be combined to protect platforms without blocking engineering teams. Practical examples and outcomes are included to help you apply the patterns quickly.</p>
-                    </header>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../about.html">About</a></li>
-                        <li><a href="../services.html">Services</a></li>
-                        <li><a href="index.html">Blog</a></li>
-                        <li><a href="../resume.html">Resume</a></li>
-                        <li><a href="../contact.html">Contact</a></li>
-                    </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cloud Governance Patterns for Resilient Delivery | Govindarajan Vishnuchithan</title>
+    <meta name="description" content="Cloud governance patterns that keep teams agile while preserving control, cost discipline, and operational reliability." />
+    <link rel="canonical" href="https://govindsme.github.io/blog/2025-10-cloud-governance-roadmap.html" />
+    <meta name="theme-color" content="#0B1220" />
+    <meta property="og:title" content="Cloud Governance Patterns for Resilient Delivery | Govindarajan Vishnuchithan" />
+    <meta property="og:description" content="Cloud governance patterns that keep teams agile while preserving control, cost discipline, and operational reliability." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://govindsme.github.io/blog/2025-10-cloud-governance-roadmap.html" />
+    <meta property="og:image" content="https://govindsme.github.io/images/covers/2025-10-cloud-governance-roadmap.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="article:published_time" content="2025-10-14" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cloud Governance Patterns for Resilient Delivery | Govindarajan Vishnuchithan" />
+    <meta name="twitter:description" content="Cloud governance patterns that keep teams agile while preserving control, cost discipline, and operational reliability." />
+    <meta name="twitter:image" content="https://govindsme.github.io/images/covers/2025-10-cloud-governance-roadmap.jpg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Cloud Governance Patterns for Resilient Delivery",
+        "description": "Cloud governance patterns that keep teams agile while preserving control, cost discipline, and operational reliability.",
+        "image": "https://govindsme.github.io/images/covers/2025-10-cloud-governance-roadmap.jpg",
+        "datePublished": "2025-10-14",
+        "author": {
+            "@type": "Person",
+            "name": "Govindarajan Vishnuchithan",
+            "url": "https://govindsme.github.io/"
+        },
+        "publisher": {
+            "@type": "Person",
+            "name": "Govindarajan Vishnuchithan"
+        },
+        "mainEntityOfPage": "https://govindsme.github.io/blog/2025-10-cloud-governance-roadmap.html"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://govindsme.github.io/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://govindsme.github.io/blog/index.html" },
+            { "@type": "ListItem", "position": 3, "name": "Cloud Governance Patterns for Resilient Delivery" }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <nav class="nav container" aria-label="Primary">
+            <a class="nav-brand" href="/index.html">
+                <span class="mark" aria-hidden="true">GV</span>
+                <span>Govindarajan Vishnuchithan</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+                <svg class="icon icon-open" aria-hidden="true"><use href="/assets/icons.svg#i-menu"></use></svg>
+                <svg class="icon icon-close" aria-hidden="true"><use href="/assets/icons.svg#i-close"></use></svg>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/blog/index.html" aria-current="page">Blog</a></li>
+                <li><a href="/resume.html">Resume</a></li>
+                <li><a href="/contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumbs">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/blog/index.html">Blog</a></li>
+                        <li aria-current="page">Cloud Governance Roadmap</li>
+                    </ol>
+                </nav>
+                <p class="eyebrow eyebrow-cyan">Cloud Governance</p>
+                <h1>Cloud Governance Patterns for Resilient Delivery</h1>
+                <div class="post-meta mt-1">
+                    <span><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-calendar"></use></svg> <time datetime="2025-10-14">October 14, 2025</time></span>
+                    <span><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-clock"></use></svg> 3 min read</span>
+                    <span><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-users"></use></svg> Govindarajan Vishnuchithan</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <article class="prose">
+                    <figure>
+                        <img src="/images/covers/2025-10-cloud-governance-roadmap.jpg" alt="" width="1200" height="630" fetchpriority="high" />
+                    </figure>
+                    <p class="takeaway"><strong>Quick takeaway:</strong> Implement policy templates and account boundaries to preserve autonomy while enforcing cost and security guardrails.</p>
+                    <p>This article shows how policy templates, cost guardrails, and account-level boundaries can be combined to protect platforms without blocking engineering teams. Practical examples and outcomes are included to help you apply the patterns quickly.</p>
+                    <h2>Governance needs guardrails, not gatekeeping</h2>
+                    <p>Governance is most effective when it provides guardrails that help teams make good decisions while staying focused on delivery. The patterns below help balance compliance, reliability, and autonomy.</p>
+                    <h2>Three governance pillars</h2>
+                    <ol>
+                        <li>Policy and standards that are simple and measurable.</li>
+                        <li>Automation that enforces compliance where it matters most.</li>
+                        <li>Visibility that exposes drift and trends before they become issues.</li>
+                    </ol>
+                    <h2>Deploying governance patterns</h2>
+                    <p>Start with the highest-risk areas: infrastructure configuration, access controls, and deployment security. Use automated scans and dashboards to keep the conversation evidence-based.</p>
+                    <figure>
+                        <svg viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Governance pillars diagram: policy, automation, visibility">
+                            <rect x="30" y="40" width="220" height="110" rx="16" fill="#2E5CE6" opacity="0.92" />
+                            <text x="140" y="78" fill="#fff" text-anchor="middle" font-size="16" font-family="sans-serif">Policy</text>
+                            <text x="140" y="100" fill="#fff" text-anchor="middle" font-size="12" font-family="sans-serif">Simple and measurable</text>
+                            <rect x="280" y="40" width="220" height="110" rx="16" fill="#2E5CE6" opacity="0.92" />
+                            <text x="390" y="78" fill="#fff" text-anchor="middle" font-size="16" font-family="sans-serif">Automation</text>
+                            <text x="390" y="100" fill="#fff" text-anchor="middle" font-size="12" font-family="sans-serif">Enforce the right controls</text>
+                            <rect x="530" y="40" width="220" height="110" rx="16" fill="#2E5CE6" opacity="0.92" />
+                            <text x="640" y="78" fill="#fff" text-anchor="middle" font-size="16" font-family="sans-serif">Visibility</text>
+                            <text x="640" y="100" fill="#fff" text-anchor="middle" font-size="12" font-family="sans-serif">Track drift and trends</text>
+                        </svg>
+                        <figcaption>Governance built from policy, automation, and visibility.</figcaption>
+                    </figure>
+                    <h2>Keep teams moving</h2>
+                    <p>Governance works best when it reduces uncertainty, not when it introduces more questions. That means documentation should be easy to consume, automation should be predictable, and escalations should be rare.</p>
+
+                    <div class="article-cta">
+                        <p><a class="btn btn-primary" href="/contact.html">Discuss cloud governance</a></p>
+                    </div>
+                </article>
+
+                <nav class="pager" aria-label="More posts">
+                    <a class="prev" href="/blog/2025-08-secure-delivery-foundations.html"><span class="dir"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-left"></use></svg> Older</span><span class="t">Secure Delivery Foundations Without Slowing Teams</span></a>
+                    <a class="next" href="/blog/2026-01-finops-automation-synergy.html"><span class="dir">Newer <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-right"></use></svg></span><span class="t">When FinOps and Automation Work as One</span></a>
                 </nav>
             </div>
-            <div class="wrapper style1">
-                <article class="container special">
-                    <header>
-                        <h2>Cloud governance patterns for resilient delivery</h2>
-                        <p>Governance needs guardrails, not gatekeeping.</p>
-                    </header>
+        </section>
+    </main>
 
-                    <section>
-                        <p>Governance is most effective when it provides guardrails that help teams make good decisions while staying focused on delivery. The patterns below help balance compliance, reliability, and autonomy.</p>
-
-                        <h3>Three governance pillars</h3>
-                        <ol>
-                            <li>Policy and standards that are simple and measurable.</li>
-                            <li>Automation that enforces compliance where it matters most.</li>
-                            <li>Visibility that exposes drift and trends before they become issues.</li>
-                        </ol>
-                    </section>
-
-                    <section>
-                        <h3>Deploying governance patterns</h3>
-                        <p>Start with the highest-risk areas: infrastructure configuration, access controls, and deployment security. Use automated scans and dashboards to keep the conversation evidence-based.</p>
-
-                        <figure>
-                            <svg width="100%" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <rect x="30" y="40" width="220" height="110" rx="16" fill="#28527a" />
-                                    <text x="140" y="78" fill="#fff" text-anchor="middle" font-size="16">Policy</text>
-                                    <text x="140" y="100" fill="#fff" text-anchor="middle" font-size="12">Simple and measurable</text>
-                                    <rect x="280" y="40" width="220" height="110" rx="16" fill="#28527a" />
-                                    <text x="390" y="78" fill="#fff" text-anchor="middle" font-size="16">Automation</text>
-                                    <text x="390" y="100" fill="#fff" text-anchor="middle" font-size="12">Enforce the right controls</text>
-                                    <rect x="530" y="40" width="220" height="110" rx="16" fill="#28527a" />
-                                    <text x="640" y="78" fill="#fff" text-anchor="middle" font-size="16">Visibility</text>
-                                    <text x="640" y="100" fill="#fff" text-anchor="middle" font-size="12">Track drift and trends</text>
-                                </g>
-                            </svg>
-                            <figcaption>Governance built from policy, automation, and visibility.</figcaption>
-                        </figure>
-                    </section>
-
-                    <section>
-                        <h3>Keep teams moving</h3>
-                        <p>Governance works best when it reduces uncertainty, not when it introduces more questions. That means documentation should be easy to consume, automation should be predictable, and escalations should be rare.</p>
-                    </section>
-
-                    <footer>
-                        <a href="../contact.html" class="button">Discuss cloud governance</a>
-                    </footer>
-                </article>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>Govindarajan Vishnuchithan</h2>
+                <p>Global VP of Platform Engineering &amp; CISO. Building secure, cloud-native engineering platforms with measurable outcomes.</p>
+            </div>
+            <nav aria-label="Footer">
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/blog/index.html">Blog</a></li>
+                    <li><a href="/resume.html">Resume</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h3>Connect</h3>
+                <ul class="footer-social">
+                    <li><a href="https://www.linkedin.com/in/govindarajan-vishnuchithan/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-linkedin"></use></svg></a></li>
+                    <li><a href="https://github.com/govindarajanv" target="_blank" rel="noopener" aria-label="GitHub profile"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-github"></use></svg></a></li>
+                    <li><a href="/contact.html" aria-label="Contact page"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-mail"></use></svg></a></li>
+                </ul>
             </div>
         </div>
-    </body>
+        <div class="container footer-bottom">
+            <span>© 2026 Govindarajan Vishnuchithan. All rights reserved.</span>
+            <span>Bengaluru, India</span>
+        </div>
+    </footer>
+
+    <script src="/assets/js/site.js" defer></script>
+</body>
 </html>

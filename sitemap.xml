@@ -2,72 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://govindsme.github.io/</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://govindsme.github.io/about.html</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://govindsme.github.io/services.html</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://govindsme.github.io/contact.html</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://govindsme.github.io/blog/index.html</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://govindsme.github.io/blog/2025-05-developer-experience-roadmap.html</loc>
-    <lastmod>2025-05-07</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://govindsme.github.io/blog/2025-08-secure-delivery-foundations.html</loc>
-    <lastmod>2025-08-22</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://govindsme.github.io/blog/2025-10-cloud-governance-roadmap.html</loc>
-    <lastmod>2025-10-14</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://govindsme.github.io/blog/2026-01-finops-automation-synergy.html</loc>
-    <lastmod>2026-01-19</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://govindsme.github.io/blog/2026-03-kubernetes-native-platforms.html</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://govindsme.github.io/blog/2026-05-ai-llm-productivity.html</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://govindsme.github.io/blog/2026-06-platform-transformation-leadership.html</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://govindsme.github.io/blog/2026-06-published-platform-engineering-book.html</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://govindsme.github.io/blog/2026-06-medium-article-insights.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>

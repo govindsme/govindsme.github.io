@@ -1,151 +1,157 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Contact | Govindarajan Vishnuchithan</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Contact form for requesting the resume PDF or advisory inquiries." />
-        <meta property="og:title" content="Contact | Govindarajan Vishnuchithan" />
-        <meta property="og:description" content="Request the PDF resume or ask about platform, DevSecOps, cloud, and leadership advisory." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://govindsme.github.io/contact.html" />
-        <meta property="og:image" content="https://govindsme.github.io/images/resume-img-000.png" />
-        <link rel="canonical" href="https://govindsme.github.io/contact.html" />
-        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>GV</text></svg>" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="assets/css/custom.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    </head>
-    <body class="no-sidebar is-preload">
-        <div id="page-wrapper">
-            <div id="header">
-                <div class="inner">
-                    <header>
-                        <h1><a href="index.html" id="logo">Contact</a></h1>
-                        <hr />
-                        <p>Request the PDF resume or ask about platform, DevSecOps, cloud, and leadership advisory.</p>
-                    </header>
-                </div>
-                <nav id="nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="blog/index.html">Blog</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Govindarajan Vishnuchithan</title>
+    <meta name="description" content="Contact Govindarajan Vishnuchithan — request a secure copy of the resume PDF, inquire about advisory services, or start a conversation." />
+    <link rel="canonical" href="https://govindsme.github.io/contact.html" />
+    <meta name="theme-color" content="#0B1220" />
+    <meta property="og:title" content="Contact | Govindarajan Vishnuchithan" />
+    <meta property="og:description" content="Request the PDF resume or ask about platform, DevSecOps, cloud, and leadership advisory." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://govindsme.github.io/contact.html" />
+    <meta property="og:image" content="https://govindsme.github.io/images/og-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contact | Govindarajan Vishnuchithan" />
+    <meta name="twitter:description" content="Request the PDF resume or ask about platform, DevSecOps, cloud, and leadership advisory." />
+    <meta name="twitter:image" content="https://govindsme.github.io/images/og-card.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <nav class="nav container" aria-label="Primary">
+            <a class="nav-brand" href="/index.html">
+                <span class="mark" aria-hidden="true">GV</span>
+                <span>Govindarajan Vishnuchithan</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+                <svg class="icon icon-open" aria-hidden="true"><use href="/assets/icons.svg#i-menu"></use></svg>
+                <svg class="icon icon-close" aria-hidden="true"><use href="/assets/icons.svg#i-close"></use></svg>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/blog/index.html">Blog</a></li>
+                <li><a href="/resume.html">Resume</a></li>
+                <li><a href="/contact.html" class="nav-cta" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow eyebrow-cyan">Contact</p>
+                <h1>Let's start a conversation</h1>
+                <p class="lede">Request a secure copy of the resume, inquire about advisory services, or simply say hello. Messages are reviewed manually and handled securely.</p>
             </div>
+        </section>
 
-            <section id="banner">
-                <header>
-                    <h2>Let's start a conversation</h2>
-                    <p>Use this form to request the resume, inquire about services, or start a conversation. Messages are reviewed manually and handled securely.</p>
-                </header>
-            </section>
-
-            <div class="wrapper style1">
-                <section class="container special contact-form fade-in">
-                    <div class="row">
-                        <div class="col-6 col-12-mobile">
-                            <h3 style="margin-bottom: 1em;"><i class="fas fa-envelope" style="color: var(--blue); margin-right: 0.4em;"></i> Send a message</h3>
-                            <form id="contactForm" action="https://formspree.io/f/xpzvoqyn" method="POST">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Your name" required />
-
-                                <label for="email">Email address</label>
-                                <input type="email" id="email" name="email" placeholder="you@example.com" required />
-
-                                <label for="purpose">Purpose</label>
-                                <select id="purpose" name="purpose">
-                                    <option value="general">General inquiry</option>
-                                    <option value="services">Services inquiry</option>
-                                    <option value="resume">Request resume (PDF)</option>
-                                </select>
-
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" placeholder="Let me know the best time to connect or what you need." required></textarea>
-
-                                <p class="form-note">All fields are required.</p>
-                                <button class="button" type="submit">Send message</button>
-                                <div id="formMessage"></div>
-                            </form>
+        <section class="section" aria-label="Contact form and details">
+            <div class="container">
+                <div class="grid grid-2 items-start">
+                    <div class="reveal">
+                        <div class="section-head">
+                            <p class="eyebrow">Send a message</p>
+                            <h2>How can I help?</h2>
                         </div>
-                        <div class="col-6 col-12-mobile">
-                            <h3 style="margin-bottom: 1em;"><i class="fas fa-info-circle" style="color: var(--blue); margin-right: 0.4em;"></i> Other ways to connect</h3>
-                            <div style="background: var(--gray-50); border-radius: var(--radius); padding: 2em; border: 1px solid var(--gray-200);">
-                                <p><i class="fab fa-linkedin" style="color: var(--blue); margin-right: 0.5em;"></i> <strong>LinkedIn</strong><br /><a href="https://www.linkedin.com/in/govindarajan-vishnuchithan/" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
-                                <p style="margin-top: 1.2em;"><i class="fab fa-github" style="color: var(--blue); margin-right: 0.5em;"></i> <strong>GitHub</strong><br /><a href="https://github.com/govindarajanv" target="_blank" rel="noopener">View GitHub profile</a></p>
-                                <p style="margin-top: 1.2em;"><i class="fas fa-book" style="color: var(--blue); margin-right: 0.5em;"></i> <strong>Book</strong><br /><a href="https://in.bpbonline.com/products/platform-engineering-and-security" target="_blank" rel="noopener">Platform Engineering &amp; Security (BPB)</a></p>
+                        <form id="contactForm" action="https://formspree.io/f/xpzvoqyn" method="POST">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
+                                </div>
+                                <div class="field">
+                                    <label for="email">Email address</label>
+                                    <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+                                </div>
+                                <div class="field full">
+                                    <label for="purpose">Purpose</label>
+                                    <select id="purpose" name="purpose">
+                                        <option value="general">General inquiry</option>
+                                        <option value="services">Services inquiry</option>
+                                        <option value="resume">Request resume (PDF)</option>
+                                    </select>
+                                </div>
+                                <div class="field full">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="5" placeholder="Let me know the best time to connect or what you need." required></textarea>
+                                </div>
                             </div>
+                            <p class="form-note mt-2">Name, email, and message are required.</p>
+                            <p class="mt-2"><button class="btn btn-primary" type="submit">Send message</button></p>
+                            <div id="formMessage" aria-live="polite"></div>
+                        </form>
+                    </div>
+                    <div class="reveal">
+                        <div class="section-head">
+                            <p class="eyebrow">Other ways to connect</p>
+                            <h2>Channels</h2>
+                        </div>
+                        <div class="info-panel">
+                            <ul>
+                                <li>
+                                    <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-linkedin"></use></svg>
+                                    <span><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/govindarajan-vishnuchithan/" target="_blank" rel="noopener">Connect on LinkedIn</a></span>
+                                </li>
+                                <li>
+                                    <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-github"></use></svg>
+                                    <span><span class="label">GitHub</span><a href="https://github.com/govindarajanv" target="_blank" rel="noopener">View GitHub profile</a></span>
+                                </li>
+                                <li>
+                                    <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-book"></use></svg>
+                                    <span><span class="label">Book</span><a href="https://in.bpbonline.com/products/platform-engineering-and-security" target="_blank" rel="noopener">Platform Engineering &amp; Security (BPB)</a></span>
+                                </li>
+                                <li>
+                                    <svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-map-pin"></use></svg>
+                                    <span><span class="label">Location</span>Bengaluru, India</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </section>
-            </div>
-
-            <div id="footer">
-                <div class="container">
-                    <section class="contact">
-                        <header><h3>Follow along</h3></header>
-                        <p>Technical leadership, cloud-native strategy, and platform engineering insights.</p>
-                        <ul class="icons">
-                            <li><a href="https://www.linkedin.com/in/govindarajan-vishnuchithan/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                            <li><a href="https://github.com/govindarajanv" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                        </ul>
-                    </section>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>Govindarajan Vishnuchithan</h2>
+                <p>Global VP of Platform Engineering &amp; CISO. Building secure, cloud-native engineering platforms with measurable outcomes.</p>
+            </div>
+            <nav aria-label="Footer">
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/blog/index.html">Blog</a></li>
+                    <li><a href="/resume.html">Resume</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h3>Connect</h3>
+                <ul class="footer-social">
+                    <li><a href="https://www.linkedin.com/in/govindarajan-vishnuchithan/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-linkedin"></use></svg></a></li>
+                    <li><a href="https://github.com/govindarajanv" target="_blank" rel="noopener" aria-label="GitHub profile"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-github"></use></svg></a></li>
+                    <li><a href="/contact.html" aria-label="Contact page"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#i-mail"></use></svg></a></li>
+                </ul>
+            </div>
         </div>
-        <script>
-            document.getElementById('contactForm').addEventListener('submit', function(event) {
-                event.preventDefault();
-                var form = this;
-                var result = document.getElementById('formMessage');
-                var submitBtn = form.querySelector('button[type="submit"]');
-                var originalText = submitBtn.textContent;
+        <div class="container footer-bottom">
+            <span>© 2026 Govindarajan Vishnuchithan. All rights reserved.</span>
+            <span>Bengaluru, India</span>
+        </div>
+    </footer>
 
-                submitBtn.textContent = 'Sending...';
-                submitBtn.disabled = true;
-
-                fetch(form.action, {
-                    method: 'POST',
-                    body: new FormData(form),
-                    headers: { 'Accept': 'application/json' }
-                }).then(function(response) {
-                    if (response.ok) {
-                        var purpose = document.getElementById('purpose').value;
-                        var purposeText = (purpose === 'resume') ? 'Your resume request has been recorded.' : 'Your message has been recorded.';
-                        result.innerHTML = '<div class="form-success"><strong>Thank you.</strong> ' + purposeText + ' A response will be shared shortly.</div>';
-                        form.reset();
-                    } else {
-                        result.innerHTML = '<div class="form-error">Something went wrong. Please try again or reach out via LinkedIn.</div>';
-                    }
-                }).catch(function() {
-                    result.innerHTML = '<div class="form-error">Network error. Please try again or reach out via LinkedIn.</div>';
-                }).finally(function() {
-                    submitBtn.textContent = originalText;
-                    submitBtn.disabled = false;
-                });
-            });
-        </script>
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.dropotron.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script>
-        (function(){
-            var observer = new IntersectionObserver(function(entries){
-                entries.forEach(function(e){
-                    if(e.isIntersecting){ e.target.classList.add('visible'); }
-                });
-            },{threshold:0.1, rootMargin:'0px 0px -40px 0px'});
-            document.querySelectorAll('.fade-in,.fade-in-left,.fade-in-right,.scale-in').forEach(function(el){ observer.observe(el); });
-        })();
-        </script>
-    </body>
+    <script src="/assets/js/site.js" defer></script>
+</body>
 </html>
