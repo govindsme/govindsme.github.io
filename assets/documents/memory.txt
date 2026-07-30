@@ -39,14 +39,18 @@ Design tokens (for future edits)
 - Spacing: --space-s/m/l; layout max 72rem; radius 16px; icons via /assets/icons.svg#i-<name>.
 - Utility classes: mt-1/2/3, mb-3, text-muted, items-start, hero-center, eyebrow-cyan, chip/chip-light.
 
-Pending work (in order)
-1. Update AGENTS.md — page mapping (add resume/contact/404), new asset structure, editing rules.
-2. Update README.md — new structure and zero-build architecture.
-3. Update sitemap.xml — refresh lastmod to publish date.
-4. QA pass — run `python3 -m http.server` and verify: all pages return 200, all internal links resolve,
-   icons.svg loads, fonts load, no-JS rendering acceptable, reduced-motion honored, print styles OK.
-5. Commit everything (including staged deletions + new files) and push to main to publish.
-6. Owner action (outside repo): rotate GitHub PAT stored in local .git/config remote URL;
+Completed work (2026-07-30)
+- Redesign implemented, QA'd, committed (5ba07b9), and pushed to main — GitHub Pages publishes from root.
+- QA results: all 16 pages + assets HTTP 200 on local server; 31 root-relative URLs resolve; HTML balanced;
+  JSON-LD valid; 10 key color pairs all pass WCAG AA (4.5:1+); sitemap valid XML.
+- AGENTS.md, README.md, sitemap.xml lastmod refreshed.
+- Remaining limitation: no headless browser in the environment, so visual/pixel verification was not possible;
+  markup, structure, links, and contrast were verified programmatically. Recommend a quick visual pass on the
+  live site (desktop + mobile) after deploy.
+
+Pending work
+1. Verify the live site at https://govindsme.github.io/ after Pages deploy completes (desktop + mobile widths).
+2. Owner action (outside repo): rotate GitHub PAT stored in local .git/config remote URL;
    switch to a credential helper. Token was never committed to the repo.
 
 Content rules (unchanged)
